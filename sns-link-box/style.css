@@ -9,7 +9,7 @@ ul {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -19,54 +19,54 @@ ul {
 
 ul li {
   list-style: none;
-  margin: 0 100px;
+  margin: 0 40px;
 }
 
-ul li:hover:nth-child(1) a {
+ul li:nth-child(1) a {
   background: #55acee;
 }
 
-ul li:hover:nth-child(1) a:before {
-  background: #4184b7;
+ul li:nth-child(1)::before a {
+  background: #55acee;
 }
 
-ul li:hover:nth-child(1) a:after {
-  background: #4d9fde;
+ul li:nth-child(1)::after a {
+  background: #55acee;
 }
 
-ul li:hover:nth-child(2) a {
+ul li:nth-child(2) a {
   background: #3b5999;
 }
 
-ul li:hover:nth-child(2) a:before {
-  background: #244a86;
+ul li:nth-child(2)::before a {
+  background: #3b5999;
 }
 
-ul li:hover:nth-child(2) a:after {
-  background: #4a69ab;
+ul li:nth-child(2)::after a {
+  background: #3b5999;
 }
 
-ul li:hover:nth-child(3) a {
+ul li:nth-child(3) a {
   background: #dd4b39;
 }
 
-ul li:hover:nth-child(3) a:before {
-  background: #c13929;
+ul li:nth-child(3)::before a {
+  background: #dd4b39;
 }
 
-ul li:hover:nth-child(3) a:after {
-  background: #e8432e;
+ul li:nth-child(3)::after a {
+  background: #dd4b39;
 }
 
-ul li:hover:nth-child(4) a {
+ul li:nth-child(4) a {
   background: black;
 }
 
-ul li:hover:nth-child(4) a:before {
+ul li:nth-child(4)::before a {
   background: black;
 }
 
-ul li:hover:nth-child(4) a:after {
+ul li:nth-child(4)::after a {
   background: black;
 }
 
@@ -77,13 +77,12 @@ ul li a {
   height: 80px;
   background-color: #fff;
   text-align: center;
-  -webkit-transform: perspective(1000px) rotate(30deg) skew(-25deg)
-    translate(0, 0);
-  transform: perspective(1000px) rotate(30deg) skew(-25deg) translate(0, 0);
+  -webkit-transform: perspective(1000px) rotate(30deg) skew(-25deg) translate(0, 0);
+          transform: perspective(1000px) rotate(30deg) skew(-25deg) translate(0, 0);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 ul li a::before {
@@ -97,7 +96,7 @@ ul li a::before {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: rotate(0deg) skewY(45deg);
-  transform: rotate(0deg) skewY(45deg);
+          transform: rotate(0deg) skewY(45deg);
 }
 
 ul li a::after {
@@ -111,16 +110,14 @@ ul li a::after {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: rotate(0deg) skewX(45deg);
-  transform: rotate(0deg) skewX(45deg);
+          transform: rotate(0deg) skewX(45deg);
 }
 
 ul li a:hover {
-  -webkit-transform: perspective(1000px) rotate(30deg) skew(-25deg)
-    translate(-20px, -20px);
-  transform: perspective(1000px) rotate(30deg) skew(-25deg)
-    translate(-20px, -20px);
+  -webkit-transform: perspective(1000px) rotate(30deg) skew(-25deg) translate(-20px, -20px);
+          transform: perspective(1000px) rotate(30deg) skew(-25deg) translate(-20px, -20px);
   -webkit-box-shadow: 40px 40px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 40px 40px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 40px 40px 10px rgba(0, 0, 0, 0.5);
 }
 
 ul li a .fa {
